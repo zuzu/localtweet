@@ -14,7 +14,25 @@
 		F52CFD15156486C600F6F841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CFD14156486C600F6F841 /* main.m */; };
 		F52CFD19156486C600F6F841 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CFD18156486C600F6F841 /* AppDelegate.m */; };
 		F52CFD1C156486C600F6F841 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52CFD1A156486C600F6F841 /* MainStoryboard.storyboard */; };
-		F52CFD1F156486C600F6F841 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CFD1E156486C600F6F841 /* ViewController.m */; };
+		F52CFD271564874F00F6F841 /* tableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CFD261564874F00F6F841 /* tableViewController.m */; };
+		F52CFD2915648A6100F6F841 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52CFD2815648A6100F6F841 /* CoreLocation.framework */; };
+		F52CFD4015648F6B00F6F841 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CFD3815648F6B00F6F841 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F52CFD4115648F6B00F6F841 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CFD3A15648F6B00F6F841 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F52CFD4215648F6B00F6F841 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CFD3D15648F6B00F6F841 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F52CFD4315648F6B00F6F841 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CFD3F15648F6B00F6F841 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F52CFD471564901000F6F841 /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F52CFD461564901000F6F841 /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5B52EE81565EA7A008DB5A0 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B52EE61565EA3D008DB5A0 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5B52EE91565EA7A008DB5A0 /* AFJSONRequestOperation.h in Sources */ = {isa = PBXBuildFile; fileRef = F5B52EE71565EA3D008DB5A0 /* AFJSONRequestOperation.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5B52EEB1565F2B2008DB5A0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B52EEA1565F2B2008DB5A0 /* libz.dylib */; };
+		F5B52EF11565F384008DB5A0 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = F5B52EED1565F384008DB5A0 /* CHANGELOG.md */; };
+		F5B52EF21565F384008DB5A0 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B52EEF1565F384008DB5A0 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5B52EF31565F384008DB5A0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F5B52EF01565F384008DB5A0 /* README.md */; };
+		F5BC40C51564999000110397 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BC40B81564999000110397 /* DDXMLElementAdditions.m */; };
+		F5BC40C61564999000110397 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BC40BB1564999000110397 /* NSString+DDXML.m */; };
+		F5BC40C71564999000110397 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BC40BE1564999000110397 /* DDXMLDocument.m */; };
+		F5BC40C81564999000110397 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BC40C01564999000110397 /* DDXMLElement.m */; };
+		F5BC40C91564999000110397 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BC40C21564999000110397 /* DDXMLNode.m */; };
+		F5BC40CC156499A400110397 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BC40CB156499A400110397 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +40,47 @@
 		F52CFD08156486C600F6F841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F52CFD0A156486C600F6F841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F52CFD0C156486C600F6F841 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F52CFD10156486C600F6F841 /* localTweet-Info.plist */ = {isa = PBXFileReference; path = "localTweet-Info.plist"; sourceTree = "<group>"; };
+		F52CFD10156486C600F6F841 /* localTweet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "localTweet-Info.plist"; sourceTree = "<group>"; };
 		F52CFD12156486C600F6F841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F52CFD14156486C600F6F841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F52CFD16156486C600F6F841 /* localTweet-Prefix.pch */ = {isa = PBXFileReference; path = "localTweet-Prefix.pch"; sourceTree = "<group>"; };
-		F52CFD17156486C600F6F841 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		F52CFD16156486C600F6F841 /* localTweet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "localTweet-Prefix.pch"; sourceTree = "<group>"; };
+		F52CFD17156486C600F6F841 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F52CFD18156486C600F6F841 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F52CFD1B156486C600F6F841 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F52CFD1D156486C600F6F841 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		F52CFD1E156486C600F6F841 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F52CFD251564874F00F6F841 /* tableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableViewController.h; sourceTree = "<group>"; };
+		F52CFD261564874F00F6F841 /* tableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableViewController.m; sourceTree = "<group>"; };
+		F52CFD2815648A6100F6F841 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F52CFD3715648F6B00F6F841 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = ../AFHTTPClient.h; sourceTree = "<group>"; };
+		F52CFD3815648F6B00F6F841 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = ../AFHTTPClient.m; sourceTree = "<group>"; };
+		F52CFD3915648F6B00F6F841 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = ../AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		F52CFD3A15648F6B00F6F841 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = ../AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		F52CFD3B15648F6B00F6F841 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = ../AFNetworking.h; sourceTree = "<group>"; };
+		F52CFD3C15648F6B00F6F841 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = ../AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		F52CFD3D15648F6B00F6F841 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = ../AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F52CFD3E15648F6B00F6F841 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = ../AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		F52CFD3F15648F6B00F6F841 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = ../AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		F52CFD451564901000F6F841 /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
+		F52CFD461564901000F6F841 /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONUtilities.m; sourceTree = "<group>"; };
+		F5B52EE61565EA3D008DB5A0 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		F5B52EE71565EA3D008DB5A0 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		F5B52EEA1565F2B2008DB5A0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F5B52EED1565F384008DB5A0 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		F5B52EEE1565F384008DB5A0 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		F5B52EEF1565F384008DB5A0 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		F5B52EF01565F384008DB5A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		F5BC40B71564999000110397 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		F5BC40B81564999000110397 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		F5BC40BA1564999000110397 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		F5BC40BB1564999000110397 /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		F5BC40BC1564999000110397 /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		F5BC40BD1564999000110397 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		F5BC40BE1564999000110397 /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		F5BC40BF1564999000110397 /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		F5BC40C01564999000110397 /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		F5BC40C11564999000110397 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		F5BC40C21564999000110397 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		F5BC40C41564999000110397 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		F5BC40CB156499A400110397 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B52EEB1565F2B2008DB5A0 /* libz.dylib in Frameworks */,
+				F5BC40CC156499A400110397 /* libxml2.dylib in Frameworks */,
+				F52CFD2915648A6100F6F841 /* CoreLocation.framework in Frameworks */,
 				F52CFD09156486C600F6F841 /* UIKit.framework in Frameworks */,
 				F52CFD0B156486C600F6F841 /* Foundation.framework in Frameworks */,
 				F52CFD0D156486C600F6F841 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +103,9 @@
 		F52CFCF9156486C600F6F841 = {
 			isa = PBXGroup;
 			children = (
+				F5B52EEA1565F2B2008DB5A0 /* libz.dylib */,
+				F5BC40CB156499A400110397 /* libxml2.dylib */,
+				F52CFD2815648A6100F6F841 /* CoreLocation.framework */,
 				F52CFD0E156486C600F6F841 /* localTweet */,
 				F52CFD07156486C600F6F841 /* Frameworks */,
 				F52CFD05156486C600F6F841 /* Products */,
@@ -77,11 +133,14 @@
 		F52CFD0E156486C600F6F841 /* localTweet */ = {
 			isa = PBXGroup;
 			children = (
+				F5B52EEC1565F384008DB5A0 /* JSONKit */,
+				F5BC40B51564999000110397 /* KissXML */,
+				F52CFD4415648F7D00F6F841 /* AFNetworking */,
 				F52CFD17156486C600F6F841 /* AppDelegate.h */,
 				F52CFD18156486C600F6F841 /* AppDelegate.m */,
 				F52CFD1A156486C600F6F841 /* MainStoryboard.storyboard */,
-				F52CFD1D156486C600F6F841 /* ViewController.h */,
-				F52CFD1E156486C600F6F841 /* ViewController.m */,
+				F52CFD251564874F00F6F841 /* tableViewController.h */,
+				F52CFD261564874F00F6F841 /* tableViewController.m */,
 				F52CFD0F156486C600F6F841 /* Supporting Files */,
 			);
 			path = localTweet;
@@ -96,6 +155,80 @@
 				F52CFD16156486C600F6F841 /* localTweet-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F52CFD4415648F7D00F6F841 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F5B52EE61565EA3D008DB5A0 /* AFJSONRequestOperation.m */,
+				F5B52EE71565EA3D008DB5A0 /* AFJSONRequestOperation.h */,
+				F52CFD451564901000F6F841 /* AFJSONUtilities.h */,
+				F52CFD461564901000F6F841 /* AFJSONUtilities.m */,
+				F52CFD3715648F6B00F6F841 /* AFHTTPClient.h */,
+				F52CFD3815648F6B00F6F841 /* AFHTTPClient.m */,
+				F52CFD3915648F6B00F6F841 /* AFHTTPRequestOperation.h */,
+				F52CFD3A15648F6B00F6F841 /* AFHTTPRequestOperation.m */,
+				F52CFD3B15648F6B00F6F841 /* AFNetworking.h */,
+				F52CFD3C15648F6B00F6F841 /* AFURLConnectionOperation.h */,
+				F52CFD3D15648F6B00F6F841 /* AFURLConnectionOperation.m */,
+				F52CFD3E15648F6B00F6F841 /* AFXMLRequestOperation.h */,
+				F52CFD3F15648F6B00F6F841 /* AFXMLRequestOperation.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		F5B52EEC1565F384008DB5A0 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				F5B52EED1565F384008DB5A0 /* CHANGELOG.md */,
+				F5B52EEE1565F384008DB5A0 /* JSONKit.h */,
+				F5B52EEF1565F384008DB5A0 /* JSONKit.m */,
+				F5B52EF01565F384008DB5A0 /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		F5BC40B51564999000110397 /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC40B61564999000110397 /* Additions */,
+				F5BC40B91564999000110397 /* Categories */,
+				F5BC40BC1564999000110397 /* DDXML.h */,
+				F5BC40BD1564999000110397 /* DDXMLDocument.h */,
+				F5BC40BE1564999000110397 /* DDXMLDocument.m */,
+				F5BC40BF1564999000110397 /* DDXMLElement.h */,
+				F5BC40C01564999000110397 /* DDXMLElement.m */,
+				F5BC40C11564999000110397 /* DDXMLNode.h */,
+				F5BC40C21564999000110397 /* DDXMLNode.m */,
+				F5BC40C31564999000110397 /* Private */,
+			);
+			path = KissXML;
+			sourceTree = "<group>";
+		};
+		F5BC40B61564999000110397 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC40B71564999000110397 /* DDXMLElementAdditions.h */,
+				F5BC40B81564999000110397 /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		F5BC40B91564999000110397 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC40BA1564999000110397 /* NSString+DDXML.h */,
+				F5BC40BB1564999000110397 /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F5BC40C31564999000110397 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC40C41564999000110397 /* DDXMLPrivate.h */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +283,8 @@
 			files = (
 				F52CFD13156486C600F6F841 /* InfoPlist.strings in Resources */,
 				F52CFD1C156486C600F6F841 /* MainStoryboard.storyboard in Resources */,
+				F5B52EF11565F384008DB5A0 /* CHANGELOG.md in Resources */,
+				F5B52EF31565F384008DB5A0 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,9 +295,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B52EE81565EA7A008DB5A0 /* AFJSONRequestOperation.m in Sources */,
+				F5B52EE91565EA7A008DB5A0 /* AFJSONRequestOperation.h in Sources */,
 				F52CFD15156486C600F6F841 /* main.m in Sources */,
 				F52CFD19156486C600F6F841 /* AppDelegate.m in Sources */,
-				F52CFD1F156486C600F6F841 /* ViewController.m in Sources */,
+				F52CFD271564874F00F6F841 /* tableViewController.m in Sources */,
+				F52CFD4015648F6B00F6F841 /* AFHTTPClient.m in Sources */,
+				F52CFD4115648F6B00F6F841 /* AFHTTPRequestOperation.m in Sources */,
+				F52CFD4215648F6B00F6F841 /* AFURLConnectionOperation.m in Sources */,
+				F52CFD4315648F6B00F6F841 /* AFXMLRequestOperation.m in Sources */,
+				F52CFD471564901000F6F841 /* AFJSONUtilities.m in Sources */,
+				F5BC40C51564999000110397 /* DDXMLElementAdditions.m in Sources */,
+				F5BC40C61564999000110397 /* NSString+DDXML.m in Sources */,
+				F5BC40C71564999000110397 /* DDXMLDocument.m in Sources */,
+				F5BC40C81564999000110397 /* DDXMLElement.m in Sources */,
+				F5BC40C91564999000110397 /* DDXMLNode.m in Sources */,
+				F5B52EF21565F384008DB5A0 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +356,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -226,7 +374,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -236,10 +384,18 @@
 		F52CFD23156486C600F6F841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "localTweet/localTweet-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "localTweet/localTweet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SDKROOT[arch=*]" = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -247,9 +403,16 @@
 		F52CFD24156486C600F6F841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "localTweet/localTweet-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "localTweet/localTweet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +437,7 @@
 				F52CFD24156486C600F6F841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
