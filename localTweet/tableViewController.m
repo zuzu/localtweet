@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "AFHTTPClient.h";
 #import "AFJSONRequestOperation.h"
-
+#import "Tweet.h"
 
 @interface tableViewController ()
 @end
@@ -56,7 +56,7 @@ UILabel *label;
         [man startUpdatingLocation];
     }
     
-    self.points = [[NSMutableArray alloc]initWithObjects:nil];
+    self.points = [[NSMutableArray alloc] initWithObjects:nil];
 
 }
 
@@ -103,6 +103,7 @@ UILabel *label;
 		label.numberOfLines = 0;
 		label.lineBreakMode = UILineBreakModeWordWrap;
 		label.font = [UIFont systemFontOfSize:14.0];
+
         //名前用ラベルを作成
         
         //土台Viewを作成
@@ -115,11 +116,16 @@ UILabel *label;
     }else{
         label = (UILabel *)[[cell.contentView viewWithTag:0] viewWithTag:1];
     }
-    
+     NSLog(@"%d", [self.points count]);
     if ([self.points count] == 0) {
         return cell;
     }
-    NSString *text = [self.points objectAtIndex:indexPath.row];
+    
+    //self.points配列からTweetクラスのインスタンスを取得。
+    Tweet *tweet = (Tweet *)[self.points objectAtIndex:indexPath.row];
+    NSString *text = tweet.text;
+    NSLog(text);
+   
     //文章のサイズを取得
     CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:14.0] constrainedToSize:CGSizeMake(240.0f, 480.0f) lineBreakMode:UILineBreakModeWordWrap];
     //ラベルのサイズを設定
@@ -132,7 +138,8 @@ UILabel *label;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	NSString *body = [self.points objectAtIndex:indexPath.row];
+    Tweet *tweet = [self.points objectAtIndex:indexPath.row];
+	NSString *body = tweet.text;
 	CGSize size = [body sizeWithFont:[UIFont systemFontOfSize:14.0] constrainedToSize:CGSizeMake(240.0, 480.0) lineBreakMode:UILineBreakModeWordWrap];
 	return size.height +25;
 }
@@ -207,16 +214,21 @@ UILabel *label;
                   ];
 
     //AFHTTPを利用した通信処理。Blocksもといクロージャを利用して簡潔に記述
+    //TweetAPIからの検索結果をJSONで受け取りTweetクラスの配列へ追加
+    //追加した結果は[self.tableView reloadData]時に実行される、cellForRowAtIndexPathにて利用。
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
             if ([JSON respondsToSelector:@selector(objectForKey:)]) {
-                for (NSDictionary *tweet in [JSON objectForKey:@"results"]) {
-                    if ([tweet objectForKey:@"geo"] != NULL) {
-                        NSLog(@"Tweet: %@", [tweet objectForKey:@"text"]);
-                        [self.points insertObject:[tweet objectForKey:@"text"] atIndex:0];
+                for (NSDictionary *tw in [JSON objectForKey:@"results"]) {
+                    if ([tw objectForKey:@"geo"] != NULL) {
+                        Tweet* tweet = [[Tweet alloc] initWithTweet: tw];
+                        //tweet.text = [tw objectForKey:@"text"];
+                        [self.points insertObject:tweet atIndex:0];
+                        //NSLog(@"points: %@", [points objectAtIndex:0 ;
                     }
                 }
             }
+           //NSLog(@"Tweet: %@",self.points );
             [self.tableView reloadData];
         } failure:nil];
     [operation start];

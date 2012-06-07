@@ -33,6 +33,10 @@
 		F5BC40C81564999000110397 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BC40C01564999000110397 /* DDXMLElement.m */; };
 		F5BC40C91564999000110397 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BC40C21564999000110397 /* DDXMLNode.m */; };
 		F5BC40CC156499A400110397 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BC40CB156499A400110397 /* libxml2.dylib */; };
+		F5FFBC1F1580380900970D1D /* TweetTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFBC1B158036B600970D1D /* TweetTimeline.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5FFBC201580380900970D1D /* TweetTimeline.h in Sources */ = {isa = PBXBuildFile; fileRef = F5FFBC1C158036B600970D1D /* TweetTimeline.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5FFBC211580380900970D1D /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFBC1D158036B600970D1D /* Tweet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5FFBC221580380900970D1D /* Tweet.h in Sources */ = {isa = PBXBuildFile; fileRef = F5FFBC1E158036B600970D1D /* Tweet.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +85,10 @@
 		F5BC40C21564999000110397 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		F5BC40C41564999000110397 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		F5BC40CB156499A400110397 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		F5FFBC1B158036B600970D1D /* TweetTimeline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetTimeline.m; sourceTree = "<group>"; };
+		F5FFBC1C158036B600970D1D /* TweetTimeline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetTimeline.h; sourceTree = "<group>"; };
+		F5FFBC1D158036B600970D1D /* Tweet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		F5FFBC1E158036B600970D1D /* Tweet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 		F52CFD0E156486C600F6F841 /* localTweet */ = {
 			isa = PBXGroup;
 			children = (
+				F5FFBC1A1580367B00970D1D /* Model */,
 				F5B52EEC1565F384008DB5A0 /* JSONKit */,
 				F5BC40B51564999000110397 /* KissXML */,
 				F52CFD4415648F7D00F6F841 /* AFNetworking */,
@@ -231,6 +240,17 @@
 			path = Private;
 			sourceTree = "<group>";
 		};
+		F5FFBC1A1580367B00970D1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5FFBC1B158036B600970D1D /* TweetTimeline.m */,
+				F5FFBC1C158036B600970D1D /* TweetTimeline.h */,
+				F5FFBC1D158036B600970D1D /* Tweet.m */,
+				F5FFBC1E158036B600970D1D /* Tweet.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,6 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FFBC1F1580380900970D1D /* TweetTimeline.m in Sources */,
+				F5FFBC201580380900970D1D /* TweetTimeline.h in Sources */,
+				F5FFBC211580380900970D1D /* Tweet.m in Sources */,
+				F5FFBC221580380900970D1D /* Tweet.h in Sources */,
 				F5B52EE81565EA7A008DB5A0 /* AFJSONRequestOperation.m in Sources */,
 				F5B52EE91565EA7A008DB5A0 /* AFJSONRequestOperation.h in Sources */,
 				F52CFD15156486C600F6F841 /* main.m in Sources */,

@@ -7,25 +7,13 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
+         isPathRelative = "1"
          filePath = "localTweet/tableViewController.m"
-         timestampString = "360652519.062272"
+         timestampString = "360558696.051515"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "197"
-         endingLineNumber = "197"
-         landmarkName = "-tableView:didSelectRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "localTweet/tableViewController.m"
-         timestampString = "360652519.062272"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "221"
-         endingLineNumber = "221"
+         startingLineNumber = "223"
+         endingLineNumber = "223"
          landmarkName = "-locationManager:didUpdateToLocation:fromLocation:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -33,12 +21,13 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
+         isPathRelative = "1"
          filePath = "localTweet/tableViewController.m"
-         timestampString = "360652576.425731"
+         timestampString = "360558696.051515"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "120"
-         endingLineNumber = "120"
+         startingLineNumber = "126"
+         endingLineNumber = "126"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -46,12 +35,41 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
+         isPathRelative = "1"
          filePath = "localTweet/tableViewController.m"
-         timestampString = "360655145.422381"
+         timestampString = "360558696.051515"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "128"
-         endingLineNumber = "128"
+         startingLineNumber = "227"
+         endingLineNumber = "227"
+         landmarkName = "-locationManager:didUpdateToLocation:fromLocation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "localTweet/tableViewController.m"
+         timestampString = "360558696.051515"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "226"
+         endingLineNumber = "226"
+         landmarkName = "-locationManager:didUpdateToLocation:fromLocation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "localTweet/tableViewController.m"
+         timestampString = "359357600.669907"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "125"
+         endingLineNumber = "125"
          landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -59,14 +77,15 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "localTweet/Tweet.m"
-         timestampString = "360723854.683417"
+         isPathRelative = "1"
+         filePath = "localTweet/Tweet.h"
+         timestampString = "360558009.329372"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "65"
-         endingLineNumber = "65"
-         landmarkName = "-dealloc"
-         landmarkType = "5">
+         startingLineNumber = "14"
+         endingLineNumber = "14"
+         landmarkName = "created_at"
+         landmarkType = "19">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

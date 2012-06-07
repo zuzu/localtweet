@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "Tweet.h"
 
 
 @interface tableViewController : UITableViewController <CLLocationManagerDelegate>{
     CLLocationManager *man;
-    NSMutableArray *points;
+    NSMutableArray  *points;
 }
 @property(nonatomic, retain)   CLLocationManager *man;
-@property (nonatomic, retain) NSMutableArray *points;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, retain)  NSMutableArray *points;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
